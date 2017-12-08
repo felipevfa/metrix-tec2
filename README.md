@@ -1,5 +1,7 @@
 # Metrix
 
+[![Build Status](https://travis-ci.org/felipevfa/metrix-tec2.svg?branch=development)](https://travis-ci.org/felipevfa/metrix-tec2)
+
 Metrix is a metric extractor for code. It takes in your project's source code and returns a set of quality metrics that help you assert your project's code quality.
 
 ## Getting Started
