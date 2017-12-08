@@ -34,6 +34,4 @@ Mostrar a parte relevante do pom.xml também é válido.
 - [ ] Minhas alterações não introduzem novos alertas (warnings).
 - [ ] Adicionei testes que provam que minha PR resolve o problema ou introduz corretamente uma funcionalidade.
 - [ ] Todos os testes estão passando.
-- [ ] Any dependent changes have been merged and published in downstream modules
-
 
