@@ -3,6 +3,9 @@ sudo: false
 
 git:
   depth: 5
+  
+jdk:
+  - oraclejdk8
 
 branches:
   only:
