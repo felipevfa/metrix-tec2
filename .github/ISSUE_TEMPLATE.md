@@ -11,7 +11,13 @@ Qual o comportamento esperado da aplicação? O que você esperava que aconteces
 
 O que de fato aconteceu ao executar a aplicação?
 
-## Reproduzindo o erro
+## O que poderia ser feito?
+
+Caso sua issue seja uma feature request, forneça, se possível, uma sugestão de como a aplicação poderia se comportar. 
+
+Sugestões de como implementar a feature desejada também são bem-vindas.
+
+## Reproduzindo o erro (caso seja um bug)
 
 ### Passos para reproduzir
 
