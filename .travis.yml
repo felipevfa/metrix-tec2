@@ -1,0 +1,16 @@
+language: java
+
+git:
+  depth: 5
+
+branches:
+  only:
+  - master
+  - development
+
+notifications:
+  email:
+    recipients:
+    - felipevfaragao@gmail.com
+    on_success: never
+    on_failure: change
