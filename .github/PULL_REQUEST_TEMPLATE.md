@@ -4,10 +4,10 @@ PRs que não passem nos testes devido a mudanças de dependências, ou introduç
 
 #### Tipo de Mudança
 
-- [] Nova funcionalidade
-- [] Bugfix
-- [] Não é retrocompatível (resolve um problema, mas altera comportamento anterior)
-- [] Requer atualização da documentação
+- [ ] Nova funcionalidade
+- [ ] Bugfix
+- [ ] Não é retrocompatível (resolve um problema, mas altera comportamento anterior)
+- [ ] Requer atualização da documentação
 
 #### O que mudou?
 
