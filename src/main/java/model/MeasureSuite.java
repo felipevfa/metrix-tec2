@@ -24,12 +24,12 @@ public class MeasureSuite {
 
 	public Collection<Measure> getMeasures() {
 		return measures;
-	}
+	}//TESTAR se retorna um ponteiro ou o valor
 
 	public void addMeasure(Measure measure) {
 		if (measures.stream().filter(f -> f.getMetric().getName().equals(measure.getMetric().getName())).count() == 0) {
 			this.measures.add(measure);
 		}
-	}
+	} //testa se a metrica ja foi inserida (TESTAR)
 
 }
