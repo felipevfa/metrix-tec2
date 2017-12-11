@@ -51,6 +51,11 @@ public class MeasureSuiteTest extends TestCase {
 		TMeasure2 = new Measure(TMetricSuite2, 333.3);
 		TMeasureSuite.addMeasure(TMeasure2);
 		Assert.assertEquals("Measure nao adicionada corretamente", true, TMeasureSuite.getMeasures().contains(TMeasure2));
+		
+		TMetricSuite2 = MetricSuite.HCo;
+		TMeasure2 = new Measure(TMetricSuite2, 333.3);
+		Assert.assertEquals("Mudou a tag",false, TMeasureSuite.getMeasures().contains(TMeasure2));
+		
 	}
 
 }
