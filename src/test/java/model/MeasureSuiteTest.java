@@ -1,7 +1,6 @@
 package model;
 
 import java.util.Collection;
-import java.util.Vector;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +13,9 @@ import model.MeasureSuite;
 public class MeasureSuiteTest extends TestCase {
 	
 	private MeasureSuite TMeasureSuite;
-	private Collection<Measure> TMeasures;
+	private Measure TMeasure, TMeasure2;
+	private MetricSuite TMetricSuite, TMetricSuite2;
+
 	
 	@Before
 	public void setUp() throws Exception {
@@ -34,15 +35,22 @@ public class MeasureSuiteTest extends TestCase {
 	
 	@Test
 	public void testGetMeasures() {
-		fail("Not yet implemented");
-		
-		//chamo essa funçao duas vezes, uma das collections eu edito e comparo com a outra e os dois tem que ser diferentes pra passar no teste, a ediçao em 1 nao pode ser refletida no outro
-		//interessante chamar a funçao de novo depois da ediçao
+		Collection<Measure> TCM1 = TMeasureSuite.getMeasures();
+		Collection<Measure> TCM2 = TMeasureSuite.getMeasures();
+		Assert.assertEquals("Deu ruim", false, TCM1 == TCM2);
 	}
 
 	@Test
 	public void testAddMeasure() {
-		fail("Not yet implemented");
+		TMetricSuite = MetricSuite.RCo;
+		TMeasure = new Measure(TMetricSuite, 333.3);
+		TMeasureSuite.addMeasure(TMeasure);
+		Assert.assertEquals("Measure RCo nao adicionada corretamente", true, TMeasureSuite.getMeasures().contains(TMeasure));
+		
+		TMetricSuite2 = MetricSuite.NoH;
+		TMeasure2 = new Measure(TMetricSuite2, 333.3);
+		TMeasureSuite.addMeasure(TMeasure2);
+		Assert.assertEquals("Measure nao adicionada corretamente", true, TMeasureSuite.getMeasures().contains(TMeasure2));
 	}
 
 }
