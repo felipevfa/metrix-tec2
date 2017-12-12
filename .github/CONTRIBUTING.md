@@ -63,7 +63,7 @@ If you are the author of a bug issue and know how to fix it, by all means do it!
 
 ## Project Structure
 
-- **```src```**: the location of Metrix's source code. This folder is divided into two subfolders:
-  - **```main```**: the Metrix de facto source code.
-  - **```test```**: the source for the tests.
-**```doc```**: the location of any documentation-related files. 
+* **```src```**: the location of Metrix's source code. This folder is divided into two subfolders:  
+  * **```main```**: the Metrix de facto source code.
+  * **```test```**: the source for the tests.
+* **```doc```**: the location of any documentation-related files. 
