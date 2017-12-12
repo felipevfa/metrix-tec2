@@ -14,6 +14,7 @@ First of all, please make sure to walk through the following:
 Then you may check:
 
 - [How to start contributing](#how-to-start-contributing)
+- [General Guidelines](#general-guidelines)
 - [Project Structure](#project-structure)
 - [Contribution Workflow](#contribution-workflow)
 - [Suggesting a new feature](#suggesting-a-new-feature)
@@ -29,17 +30,23 @@ start and open your first pull request.
 Finally, remember that opening issues is also a way to contribuet. If you find a bug, please open a new issue so we can take a
 look at it!
 
+## General Guidelines
+
+* Do **NOT** submit PRs against the ```master``` branch. They will be closed without warning.
+* **Always** work in a topic branch (i.e. a branch specific for the issue).
+* Do **NOT** checkin the target folder. PRs that contain this folder will not be accepted.
+* Make sure all tests pass before submitting your PR. 
+* Add "fix #issue-number" to your PR title.
+* Write tests.
+* Generally, work is to be done inside the ```src``` folder, but you may change the documentation in the ```doc``` folder if
+needed.
+
 ## Contribution Workflow (simplified)
 
 1. Find an issue to fix. Pick either an open issue or open one (see [suggesting a new feature](#suggesting-a-new-feature))
 2. Create a branch from ```development```. You may name your branch whatever you like, but please try to give it a meaningful name (idea: name it after the issue you are fixing e.g. "issue-#4"). 
 3. Commit your changes to your new branch. No need to do it in one commit, but please include a commit message indicating which issue your changes fix (add "fix #issue-number" to the message), for tracking reasons. 
 4. When you are finished, open a Pull Request against the ```development``` branch and wait for review. If everything is OK, your PR will be merged! :)
-
-For a more detailed workflow, please check this article on [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), which we adopt. 
-
-We are studying the benefits of adopting a commit message convention such as the one used by Angular and View, so we can
-generate a CHANGELOG.md automatically, but at this point, just try to make the commit messages meaningful. :D
 
 ### Setting up
 
@@ -48,10 +55,11 @@ generate a CHANGELOG.md automatically, but at this point, just try to make the c
 If you want to add a new feature to Metrix, please [open an issue](https://github.com/felipevfa/metrix-tec2/issues) to see
 if your idea is greenlighted, in which case you may start working on it using the simple workflow provided above.
 
+Remember to **add a test case** for your feature. PRs without tests will not be accepted.
+
 ## Project Structure
 
 ```***src***```: the location of Metrix's source code. This folder is divided into two subfolders:
   ```***main***```: the Metrix de facto source code.
   ```***test***```: the source for the tests.
 ```***doc***```: the location of any documentation-related files. 
-
