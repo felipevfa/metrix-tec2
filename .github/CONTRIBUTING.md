@@ -57,6 +57,10 @@ if your idea is greenlighted, in which case you may start working on it using th
 
 Remember to **add a test case** for your feature. PRs without tests will not be accepted.
 
+### Fixing Bugs
+
+If you are the author of a bug issue and know how to fix it, by all means do it! We will be very grateful, really. ^_^
+
 ## Project Structure
 
 ```***src***```: the location of Metrix's source code. This folder is divided into two subfolders:
