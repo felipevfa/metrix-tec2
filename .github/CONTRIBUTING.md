@@ -46,8 +46,6 @@ needed.
 3. Commit your changes to your new branch. No need to do it in one commit, but please include a commit message indicating which issue your changes fix (add "fix #issue-number" to the message), for tracking reasons. 
 4. When you are finished, open a Pull Request against the ```development``` branch and wait for review. If everything is OK, your PR will be merged! :)
 
-### Setting up
-
 ## Suggesting a new feature
 
 If you want to add a new feature to Metrix, please [open an issue](https://github.com/felipevfa/metrix-tec2/issues) to see
