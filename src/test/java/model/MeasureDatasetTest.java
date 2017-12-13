@@ -2,8 +2,6 @@ package model;
 
 import org.junit.Test;
 
-import static org.junit.Assert.fail;
-
 import java.util.Iterator;
 import junit.framework.Assert;
 

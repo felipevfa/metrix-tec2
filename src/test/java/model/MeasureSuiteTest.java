@@ -5,7 +5,6 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-import javaslang.collection.Vector;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
