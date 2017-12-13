@@ -24,11 +24,9 @@ Then you may check:
 A good way to start contributing with Metrix is to take a look at the [Open Issues](https://github.com/felipevfa/metrix-tec2/issues).
 Issues tagged with "good 1st issue" are normally easy enough to fix and are good targets for your first contribution.
 
-You can also scan our documentation for typos, or maybe for something that should be made more clear. That's also good way to
-start and open your first pull request.
+You can also scan our documentation for typos, or maybe for something that should be made more clear. That's also a good way to start.
 
-Finally, remember that opening issues is also a way to contribuet. If you find a bug, please open a new issue so we can take a
-look at it!
+Finally, remember that opening issues is also a way to contribute. If you find a bug, please open a new issue so we can take a look at it!
 
 ## General Guidelines
 
