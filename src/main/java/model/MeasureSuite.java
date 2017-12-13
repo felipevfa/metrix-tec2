@@ -22,8 +22,9 @@ public class MeasureSuite {
 		this.className = className;
 	}
 
+	@SuppressWarnings("unchecked")
 	public Collection<Measure> getMeasures() {
-		return (Collection<Measure>)(((Vector) measures).clone());
+		return (Vector<Measure>)((Vector<Measure>) measures).clone();
 	}
 
 	public void addMeasure(Measure measure) {
