@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/felipevfa/metrix-tec2.svg?branch=development)](https://travis-ci.org/felipevfa/metrix-tec2)
 
 Metrix is a metric extractor for code. It takes in your project's source code and returns a set of quality metrics that help you assert your project's code quality.
+(This project was done in the context of the discipline "Técnicas de programação II".)
 
 ## Getting Started
 
@@ -52,15 +53,15 @@ Give an example
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/felipevfa/metrix-tec2/tags). 
 
 ## Contributors
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/felipevfa/metrix-tec2/contributors) who participated in this project.
 
 ## License
 
