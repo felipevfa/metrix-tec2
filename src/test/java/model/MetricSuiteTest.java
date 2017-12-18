@@ -49,5 +49,4 @@ public class MetricSuiteTest {
 		TMetricSuite = MetricSuite.NoEH;
 		Assert.assertEquals("Error returning the name NoEH", "NoEH", TMetricSuite.getName());
 	}
-
 }

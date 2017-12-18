@@ -57,5 +57,4 @@ public class MeasureSuiteTest extends TestCase {
 		Assert.assertEquals("The tag has changed",false, TMeasureSuite.getMeasures().contains(TMeasure2));
 		
 	}
-
 }
