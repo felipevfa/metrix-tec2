@@ -10,22 +10,22 @@ Description: The number of different exception types signaled by all methods and
 constructors of a given class.
 
 Handling Coupling (HCo)
-Description: The number of different exception types signaled by all methods and 
-constructors of a given class.
+Description: The number of different exception types passed as parameters for all 
+catch blocks of a given class.
 ================================================================================
 
 ================================Size Metrics====================================
 Number of Raising (NoR)
 Description: The number of exception raised by a given class divided by a number
-of methods and constructors of this class.
+of methods (without constructors) of this class.
 
 Number of Signaling (NoS)
 Description: The number of exception signaled by a given class divided by a number
-of methods and constructors of this class.
+of methods (without constructors) of this class.
 
 Number of Handling (NoH)
-Description: The number of exception signaled by a given class divided by a number
-of methods and constructors of this class.
+Description: The number of catch blocks divided by a number of methods (without
+constructors) of this class.
 
 Number of Empty Handlers (NoEH)
 Description: The number of empty handlers (i.e., catch blocs) in a given class.
