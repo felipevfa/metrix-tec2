@@ -1,43 +1,41 @@
-Por favor, verifique se o problema já se encontra no [tracker](https://github.com/felipevfa/metrix-tec2/issues) antes de abrir uma issue.
+Please, verify if the issue is already in [tracker](https://github.com/felipevfa/metrix-tec2/issues) before opening a new one.
 
-Caso sua issue seja uma feature request, descreva o caso de uso que a aplicação não está cobrindo e, se possível, forneça uma
-sugestão do que poderia ser feito. 
+In case your issue is a feature request, please describe the use case that the application is not covering and, if possible, suggest what could be done.
 
-## O que era esperado
+## Expected behavior
 
-Qual o comportamento esperado da aplicação? O que você esperava que acontecesse?
+What was the application expected behavior? What did you expected to happen?
 
-## O que aconteceu
+## What really happened
 
-O que de fato aconteceu ao executar a aplicação?
+What happened when the application was executed?
 
-## O que poderia ser feito?
+## What could be done?
 
-Caso sua issue seja uma feature request, forneça, se possível, uma sugestão de como a aplicação poderia se comportar. 
+If your issue is a feature request, please suggest how the application should behave.
 
-Sugestões de como implementar a feature desejada também são bem-vindas.
+Suggestions on how to implement the new feature are also welcome.
 
-## Reproduzindo o erro (caso seja um bug)
+## Reproducing the problem (in case it is a bug)
 
-### Passos para reproduzir
+### Steps to reproduce
 
-1. Liste os passos para reproduzir o erro.
-2. Não deixe nada de fora, diga exatamente o que você fez para gerar o erro.
+1. Enumerate the steps to reproduce the problem.
+2. Don't leave nothing out, say exactly what you did to reproduce the bug.
 
-### Código para reprodução
+### Code to reproduce
 
-Código capaz de reproduzir o erro é muito bem-vindo. Ele pode estar no seu Github ou em outros meios, como o Pastebin.
+Code that reproduces the problem is welcome. It can be on your gitHub or other code sharing spaces, as Pastebin.
 
 ### Screenshots
 
-Anexe screenshots caso você julgue pertinente. 
+If needed, attach screenshots to your issue. 
 
-## Outros dados
+## Other data
 
-Adicione quaisquer informações que você julgar relevantes aqui.
+Add any information you belive is relevant here.
 
-* **Versão do Metrix:** 
-* **Versão do Java:** 
-* **Sistema Operacional e Versão:** 
-* **Link para o seu projeto:**
-
+* **Metrix Version:** 
+* **Java Version:** 
+* **Operating System and version:** 
+* **Link to your project:**
