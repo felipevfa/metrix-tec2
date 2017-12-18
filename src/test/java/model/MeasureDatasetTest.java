@@ -24,18 +24,7 @@ public class MeasureDatasetTest {
 				break;
 			}
 		}
-		Assert.assertEquals("Measure nao inserida", true, ok);
+		Assert.assertEquals("Measure not inserted", true, ok);
 	}
-	
-//	@Test
-//	public void testToCSV() {
-//		fail("Not yet implemented");
-//	}
-//	
-//	@Test
-//	public void testGenerateCSVFile() {
-//		fail("Not yet implemented");
-//	}
-	
 
 }
