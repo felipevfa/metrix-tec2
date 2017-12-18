@@ -1,37 +1,36 @@
-Todas as Pull Requests deverão passar pelos testes antes de serem integradas. 
+All Pull Request MUST be passing all tests before being merged. 
 
-PRs que não passem nos testes devido a mudanças de dependências, ou introdução de novas, serão analisadas caso a caso.
+PRs that do not pass the tests due to dependency changes, will be analysed case by case.
 
-#### Tipo de Mudança
+#### Type of Change
 
-- [ ] Nova funcionalidade
+- [ ] New Functionality
 - [ ] Bugfix
-- [ ] Não é retrocompatível (resolve um problema, mas altera comportamento anterior)
-- [ ] Requer atualização da documentação
+- [ ] Not retrocompatible (fixes a problem, but modifies previous behavior)
+- [ ] Requires documentation update
 
-#### O que mudou?
+#### What changed?
 
-Descreva quais as mudanças introduzidas pelo seu Pull Request e enumere quais issues ela resolve.
+Describe here what changed in your PR and enumerate wich issues it solves.
 
-**Fecha issues #:**
+**Closes issues #:**
 
-#### Mudanças de Configuração:
+#### Environment changes:
 
-Caso tenha introduzido novas dependências, liste-as abaixo:
+In case you've introduced new dependencies, list them here:
 
-* **Nome:**
-* **Versão:**
-* **Link para página ou projeto:**
+* **Name:**
+* **Version:**
+* **Link to page or project:**
 
-Mostrar a parte relevante do pom.xml também é válido.
+Showing the relevant section of your pom.xml is also valid.
 
 #### Checklist 
 
-- [ ] Eu segui as regras e estilos de contribuição descritas no [Guia de Contribuição](CONTRIBUTING.md)
-- [ ] Eu revisei o meu código.
-- [ ] Meu código está comentado nas áreas relevantes, principalmente aquelas de difícil compreensão.
-- [ ] Fiz as alterações necessárias na documentação.
-- [ ] Minhas alterações não introduzem novos alertas (warnings).
-- [ ] Adicionei testes que provam que minha PR resolve o problema ou introduz corretamente uma funcionalidade.
-- [ ] Todos os testes estão passando.
-
+- [ ] I followed the rules of contributing in the [Contributing Guide](CONTRIBUTING.md)
+- [ ] I reviewed my code.
+- [ ] My code is commented on the most relevant sections, mainly on the most complicated parts.
+- [ ] I've made the necessary changes on the documentation.
+- [ ] My changes do not produce any additional warnings.
+- [ ] I've added tests that prove that my PR solves the problem or introduces correctly a new functionality.
+- [ ] My code is passing all tests.
