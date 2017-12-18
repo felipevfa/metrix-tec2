@@ -32,10 +32,20 @@ import util.DirExplorer;
 
 public class MetricSuiteExtractor {
 	public static void main(String[] args) throws FileNotFoundException {
-		String outputFileName = "<output-file-name>";
-		String projecPath = "<path>";
+		if (args.length < 1) {
+			System.out.println("No project path provided.");
+			System.out.println("Expected:\njava -jar metrix input-project-path [output-file-name]");
+			return;
+		}
+		else if (args[0].equals("--help")) {
+			System.out.println("Usage:\njava -jar metrix input-project-path [output-file-name]");
+			return;
+		}
+		String projecPath = args[0];
+		String outputFileName = args.length < 2 ? "<output-file-name>" : args[1];
 		extract(projecPath);
 		MeasureDataset.generateCSVFile(outputFileName);
+		System.out.println("Output generated at ./data/" + outputFileName + ".csv");
 	}
 
 	public static void extract(String projecPath) throws FileNotFoundException {

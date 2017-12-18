@@ -1,0 +1,25 @@
+language: java
+sudo: false
+
+git:
+  depth: 5
+  
+jdk:
+  - oraclejdk8
+
+branches:
+  only:
+  - master
+  - development
+
+notifications:
+  email:
+    recipients:
+    - felipevfaragao@gmail.com
+    on_success: never
+    on_failure: change
+    
+addons:
+  apt:
+    packages:
+    - oracle-java8-installer
