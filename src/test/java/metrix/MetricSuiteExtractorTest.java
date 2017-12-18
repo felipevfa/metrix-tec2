@@ -1,17 +1,15 @@
 package metrix;
 
-import static org.junit.Assert.fail;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.junit.Test;
 import junit.framework.Assert;
+import junit.framework.TestCase;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.resolution.TypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSolver;
@@ -32,19 +30,16 @@ import metrix.size.NoHExtractor;
 import metrix.size.NoRExtractor;
 import metrix.size.NoSExtractor;
 import metrix.usage.EHMUExtractor;
+import model.MeasureDataset;
 import util.DirExplorer;
 
-public class MetricSuiteExtractorTest {
+public class MetricSuiteExtractorTest extends TestCase {
 	
 	private File ProjectDir;
 	private TypeSolver TTS;
 	private CompilationUnit TCU;
 
-	@Test
-	private void setEnv() {
-		ProjectDir = new File("./test-resource");
-	}
-	
+
 	private void RCo() {
 		try {
 			TCU.accept(new RCoExtractor(), JavaParserFacade.get(TTS));
@@ -161,12 +156,16 @@ public class MetricSuiteExtractorTest {
 			fail(e.getMessage());
 		}
 	}
-	
+
+
 	private void extract() {
+		ProjectDir = new File("./src/test/java/resource_test/MyBank");
+
 		new DirExplorer((level, path, file) -> path.endsWith(".java"), (level, path, file) -> {
 			try {
 				TTS = new CombinedTypeSolver(new JavaParserTypeSolver(ProjectDir), new ReflectionTypeSolver(), new MemoryTypeSolver());
 				TCU = JavaParser.parse(new FileInputStream(file));
+
 				RCo();
 				HCo();
 				SCo();
@@ -180,9 +179,16 @@ public class MetricSuiteExtractorTest {
 				RoFLoC();
 				HDoS();
 				EHMU();
+
 			} catch (IOException e) {
 				new RuntimeException(e);
 			}
 		}).explore(ProjectDir);
+	}
+
+	@Test
+	public void testMain() {
+		extract();
+		Assert.assertEquals("Incorrect generated CSV output.", "", MeasureDataset.toCSV());
 	}
 }
