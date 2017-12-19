@@ -36,7 +36,7 @@ And second, build it with Maven
 mvn package
 ```
 
-Now, run (See [WIKI](https://github.com/felipevfa/metrix-tec2/wiki) for more information about metrics and others stuff)
+Now, run (See [wiki](https://github.com/felipevfa/metrix-tec2/wiki) for more information about metrics and other stuff)
 
 * Example:
 ```
@@ -45,19 +45,11 @@ java -jar metrix input-project-path [output-file-name]
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+To run all tests with Maven
 
 ```
-Give an example
+mvn test
 ```
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Contributing
 
