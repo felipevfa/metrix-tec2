@@ -38,7 +38,7 @@ public class MetricSuiteExtractorTest extends TestCase {
 	private File ProjectDir;
 	private TypeSolver TTS;
 	private CompilationUnit TCU;
-
+	private StringBuffer buffer;
 
 	private void RCo() {
 		try {
@@ -189,6 +189,17 @@ public class MetricSuiteExtractorTest extends TestCase {
 	@Test
 	public void testMain() {
 		extract();
-		Assert.assertEquals("Incorrect generated CSV output.", "", MeasureDataset.toCSV());
+		buffer = new StringBuffer("classname,RCo,HCo,SCo,NoR,NoH,NoS,NoGH,NoEH,RoTLoC,RoCLoC,RoFLoC,HDoS,EHMU\n");
+		buffer.append("resource_test::MyBank::exception::NegativeAmountException,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0\n");
+		buffer.append("resource_test::MyBank::TaxAccount,2.0,0.0,2.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0\n");
+		buffer.append("resource_test::MyBank::SpecialAccount,0.0,1.0,1.0,0.0,0.3333,0.3333,0.0,0.0,0.2222,0.0741,0.0741,0.0,1.0\n");
+		buffer.append("resource_test::MyBank::SavingsAccount,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.3077,0.1538,0.0,0.0,1.0\n");
+		buffer.append("resource_test::MyBank::AbstractAccount,1.0,0.0,2.0,0.25,0.0,0.75,0.0,0.0,0.0,0.0,0.0,1.0,1.0\n");
+		buffer.append("resource_test::MyBank::exception::InsufficientFundsException,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0\n");
+		buffer.append("resource_test::MyBank::OrdinaryAccount,2.0,0.0,2.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0");
+		
+		Assert.assertEquals("Incorrect generated CSV output.", buffer.toString(), MeasureDataset.toCSV());
+		
+		MeasureDataset.generateCSVFile("testOutput");
 	}
 }
