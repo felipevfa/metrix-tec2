@@ -11,29 +11,37 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You need to install Maven, if you don't have yet:
 
-```
-Give examples
-```
+* [Installing Apache Maven](https://maven.apache.org/install.html)
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+First, clone the project
+
+* HTTPS:
+```
+git clone https://github.com/felipevfa/metrix-tec2.git
+```
+* SSH:
+```
+git clone git@github.com:felipevfa/metrix-tec2.git
+```
+
+And second, build it with Maven
 
 ```
-Give the example
+mvn package
 ```
 
-And repeat
+Now, run (See [WIKI](https://github.com/felipevfa/metrix-tec2/wiki) for more information about metrics and others stuff)
 
+* Example:
 ```
-until finished
+java -jar metrix input-project-path [output-file-name]
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
