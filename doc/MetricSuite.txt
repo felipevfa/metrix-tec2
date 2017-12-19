@@ -28,7 +28,7 @@ Description: The number of catch blocks divided by a number of methods (without
 constructors) of this class.
 
 Number of Empty Handlers (NoEH)
-Description: The number of empty handlers (i.e., catch blocs) in a given class.
+Description: The number of empty handlers (i.e., catch blocks) in a given class.
 
 Number of General Handlers (NoGH)
 Description: The number of general handlers in a given class (i.e., the catch 
@@ -38,21 +38,31 @@ blocks that catches java.lang.Exception or java.lang.Throwable).
 ================================Ratio Metrics===================================
 Ratio of Catch Block Lines of Code (RoCLoC)
 Description: The sum of all catch blocks lines of code of given class divided by
-the number of line of codes of this class. 
+the number of line of codes of this class [(Last Curly Brace Line of Catch Block 
+- Catch Statement Line)/(Last Curly Brace Line - Declaration Class Line)]. 
 
 Ratio of Try Block Lines of Code (RoTLoC)
 Description: The sum of all try blocks lines of code of given class divided by
-the number of line of codes of this class.
+the number of line of codes of this class [(Last Curly Brace Line of Try Block 
+- Try Statement Line)/(Last Curly Brace Line - Declaration Class Line)].
 
 Ratio of Finally Block Lines of Code (RoFLoC)
 Description: The sum of all finally blocks lines of code of given class divided 
-by the number of line of codes of this class.
+by the number of line of codes of this class [(Last Curly Brace Finally of Catch Block 
+- Finally Statement Line)/(Last Curly Brace Line - Declaration Class Line)].
 ================================================================================
 
 ================================Concern Metrics=================================
 Handling Density of Scattering (HDoS)
 Description: The density of scattering of handling code across methods of a given 
 class. This metric is calculated using a formula proposed by [1].
+- If the class has no Catch blocks HDoS = 1
+- Else: HDoS = 0 if N <= 1
+	    HDoS = 1-(N*S)/(N-1) if N>1
+	    With S = sum {k = 1..N} of ((Y[k]/X) - (1/N))^2,
+	    Y[k] = Number of lines inside all Catch Blocks of a non-abstract method k,
+	    X = Total number of lines inside Catch Blocks of given class and
+	    N = Number of non-abstract methods of given class (without constructors).
 ================================================================================
 
 ================================Usage Metrics===================================
