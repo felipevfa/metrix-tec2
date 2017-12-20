@@ -1,8 +1,10 @@
-target/
-target/**
 .DS_Store
 **/.DS_Store
+
 .classpath
 .project
 .settings/
+
 data/**
+target/
+target/**
