@@ -3,53 +3,39 @@
 [![Build Status](https://travis-ci.org/felipevfa/metrix-tec2.svg?branch=development)](https://travis-ci.org/felipevfa/metrix-tec2)
 
 Metrix is a metric extractor for code. It takes in your project's source code and returns a set of quality metrics that help you assert your project's code quality.
-(This project was done in the context of the discipline "Técnicas de programação II".)
+
+**Note:** This project was organized as part of the [CK0236 Programming Techniques II (in pt-br)](http://cc.ufc.br/curso/matriz-curricular/?cod=CK0236) course taught at the Computer Science degree at Federal University of Ceará by [Dr. Lincoln Rocha (in pt-br)](http://cc.ufc.br/curso/corpo-docente/lincoln). 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-You need to install Maven, if you don't have yet:
-
-* [Installing Apache Maven](https://maven.apache.org/install.html)
+Please make sure you have [Apache Maven installed](https://maven.apache.org/install.html) before downloading the project.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+If you have Git installed, you may clone the project by typing in the terminal:
 
-First, clone the project
+```git clone https://github.com/felipevfa/metrix-tec2.git```
 
-* HTTPS:
-```
-git clone https://github.com/felipevfa/metrix-tec2.git
-```
-* SSH:
-```
-git clone git@github.com:felipevfa/metrix-tec2.git
-```
+Or download the project by clicking in "Clone or Download > Download ZIP".
 
-And second, build it with Maven
 
-```
-mvn package
-```
+After downloading MetriX, navigate to it's folder and build it with Maven:
 
-Now, run (See [wiki](https://github.com/felipevfa/metrix-tec2/wiki) for more information about metrics and other stuff)
+```mvn package```
 
-* Example:
-```
-java -jar metrix input-project-path [output-file-name]
-```
+Finally, you can run MetriX by issuing the command:
+
+```java -jar metrix input-project-path [output-file-name]```
+
+
+See the [Wiki](https://github.com/felipevfa/metrix-tec2/wiki) for more information about the extracted metrics and the project itself.
 
 ## Running the tests
 
-To run all tests with Maven
+Run all tests with Maven by typing ```mvn test``` in the terminal.
 
-```
-mvn test
-```
 
 ## Contributing
 
