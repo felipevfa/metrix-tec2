@@ -38,7 +38,7 @@ Run all tests with Maven by typing ```mvn test``` in the terminal. This will run
 
 ## Code Quality
 
-To assert code quality, you man run the ```mvn site``` command, which will generate a page inside the ```target``` folder containing all the code quality reports for the project (namely JaCoCo, PMD and FindBugs reports).
+To assert code quality, you may run the ```mvn site``` command, which will generate a page inside the ```target``` folder containing all the code quality reports for the project (namely JaCoCo, PMD and FindBugs reports).
 
 ## Contributing
 
